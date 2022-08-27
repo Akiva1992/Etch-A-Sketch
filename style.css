@@ -1,0 +1,27 @@
+body{
+}
+
+.container{
+    background-color: bisque;
+    width: 20em;
+    height: 20em;
+    /* border: 1px black solid; */
+    border-radius: 4px;
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+    /* box-sizing: border-box; */
+}
+
+div{
+    /* width: 6.25%;  */
+    /* height:6.25%; */
+    border-radius: 2px;
+    box-sizing: border-box;
+    border: 0.01em #e7e7e7 solid;
+    background-color: aliceblue;   
+}
+
+div.color{
+    background-color: black;
+}

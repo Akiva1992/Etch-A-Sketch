@@ -5,10 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Etch A Sketch</title>
 </head>
 <body>
-    <div class="container">
+    <div class="header container"><h1 class="header txt">Etch a Sketch</h1></div>
+    <div class="container main">
+        <div class="icon-container">
+            <input type="color" id="black" class="color-picker" name="black" value="#5e5b5b">
+            <p class="icon">Color</p>
+            <img src="./imgs/draw.svg" alt="Draw button" class="icon">
+            <p class="icon">Draw</p>
+            <img src="./imgs/shade.svg" alt="Shade button" class="icon">
+            <p class="icon">Shade</p>
+            <img src="./imgs/eraser.svg" alt="Eraser button" class="icon">
+            <p class="icon">Eraser</p>
+            <img src="./imgs/clear.svg" alt="Clear button" class="icon">
+            <p class="icon">Clear</p>
+            <img src="./imgs/rainbow.svg" alt="random color button" class="icon">
+            <p class="icon">Random</p>
+        </div>
+        <div class="sketch-pad"></div>
+        <img src="./imgs/grid.svg" alt="Show grid button" class="icon">
+        <p class="icon">Show</p>
+        <div>
+            <input type="range" id="size" name="size"
+                   min="1" max="100">
+            <label for="size">Pad Size</label>
+          </div>
     </div>
     <script src="./app.js"></script>
 </body>

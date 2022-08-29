@@ -1,4 +1,186 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ********************************************************************************8 */
+
 body{
+    background-image: linear-gradient(to right top, #69c7f6, #79bff4, #8ab7ef, #98afe8, #a5a7df, #9fa2d9, #999dd2, #9398cc, #7a95c6, #6391bc, #4d8db0, #3b88a2);
+}
+
+/* h1{
+    font-family: 'Dancing Script', cursive;
+    color: #563838;
+} */
+
+p,
+span,
+label{
+    font-family: 'Caveat', cursive;
+    color: #fff;
+}
+
+.color-picker{
+    padding: 0;
+    margin: 0;
+    background-color: #5e5b5b;
+    border-radius: 200px;
+    margin-left:1em;
+    padding: 1em;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 32px;
+	height: 32px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+
+
+/* ///////////////////////////////Header//////////////////////////////////////// */
+
+.header.container{
+    background-color: #EC8C76;
+    border-radius: 100px;
+    padding: 0%;
+    margin-top:1em;
+    width: 60%;
+    margin: 1em auto;
+}
+
+h1.header.txt{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    color: #563838;
+    text-align: center;
+    /* padding: */
+}
+
+
+
+
+
+
+
+.sketch-pad{
+    background-color: #DFEDF4;
+    width: 20em;
+    height: 20em;
+    /* border: 1px black solid; */
+    border-radius: 4px;
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+    /* box-sizing: border-box; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
 }
 
 .container{
@@ -24,4 +206,4 @@ div{
 
 div.color{
     background-color: black;
-}
+} */

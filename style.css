@@ -162,7 +162,7 @@ h1.header.txt{
 
 .btns-container{
   width: max-content;
-  width: 20em;
+  width: 16em;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -174,18 +174,22 @@ h1.header.txt{
   display: flex;
   gap: 1em;
   align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
 .btn{
   position: relative;
-  width: 30%;
 }
 
 img{
   width:100%
 }
 
+.btn.on{
+  /* border: #3b88a2 1px solid; */
+  opacity: 0.3;
+}
 
 .btn:hover::before{
   content: attr(data-tooltip);
@@ -217,7 +221,7 @@ img.btn-icon{
   padding: 0.3em 0;
 }
 .grid-container{
-  width: 20em;
+  width: 16em;
   display: flex;
   justify-content: flex-end;
 
@@ -231,8 +235,8 @@ img.btn-icon{
 
 .sketch-pad{
     background-color: #DFEDF4;
-    width: 20em;
-    height: 20em;
+    width: 16em;
+    height: 16em;
     border-radius: 4px;
     display:flex;
     flex-wrap: wrap;
@@ -240,14 +244,15 @@ img.btn-icon{
     /* box-sizing: border-box; */
 }
 
+.pixel{
+  border: #8e8f8f 1px solid;
+}
 
 
 
 
 
-
-/* 
-.container{
+/* .container{
     background-color: bisque;
     width: 20em;
     height: 20em;
@@ -257,7 +262,7 @@ img.btn-icon{
     flex-wrap: wrap;
     margin: auto;
     /* box-sizing: border-box; */
-}
+} */
 
 div{
     /* width: 6.25%;  */
@@ -270,4 +275,4 @@ div{
 
 div.color{
     background-color: black;
-} */
+} 

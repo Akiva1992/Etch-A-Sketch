@@ -15,19 +15,19 @@
     <div class="container main">
         <div class="btns-container">
             <div class="btns">
-                <input data-tooltip="Color picker" type="color" id="black" class="color-picker btn" name="black" value="#000001">
-                <button class="btn" data-tooltip="Draw"><img src="./imgs/draw.svg" alt="Draw button" class="btn-icon"></button>
-                <button class="btn" data-tooltip="Shade"><img src="./imgs/shade.svg" alt="Shade button" class="btn-icon"></button>
-                <button class="btn" data-tooltip="Erase"><img src="./imgs/eraser.svg" alt="Eraser button" class="btn-icon"></button>
-                <button class="btn" data-tooltip="Clear"><img src="./imgs/clear.svg" alt="Clear button" class="btn-icon"></button>
-                <button class="btn" data-tooltip="Randonm"><img src="./imgs/rainbow.svg" alt="Random color button" class="btn-icon"></button>
+                <input data-tooltip="Color picker" type="color" id="color-picker" class="color-picker btn" name="black" value="#000001">
+                <button class="btn draw" data-tooltip="Draw"><img src="./imgs/draw.svg" alt="Draw button" class="btn-icon"></button>
+                <button class="btn shade" data-tooltip="Shade"><img src="./imgs/shade.svg" alt="Shade button" class="btn-icon"></button>
+                <button class="btn erase" data-tooltip="Erase"><img src="./imgs/eraser.svg" alt="Eraser button" class="btn-icon"></button>
+                <button class="btn random" data-tooltip="Random"><img src="./imgs/rainbow.svg" alt="Random color button" class="btn-icon"></button>
+                <button class="btn clear" data-tooltip="Clear"><img src="./imgs/clear.svg" alt="Clear button" class="btn-icon"></button>
             </div>
         </div>
         <div class="sketch-pad"></div>
         <div class="grid-container"><button class="btn grid" data-tooltip="Show grid"><img src="./imgs/grid.svg" alt="Show grid button" class="btn-icon"></button></div>
         <div>
             <input type="range" id="size" name="size"
-                   min="1" max="100">
+                   min="1" max="64">
             <label for="size">Pad Size</label>
           </div>
     </div>

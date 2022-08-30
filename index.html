@@ -24,13 +24,17 @@
             </div>
         </div>
         <div class="sketch-pad"></div>
-        <div class="grid-container"><button class="btn grid" data-tooltip="Show grid"><img src="./imgs/grid.svg" alt="Show grid button" class="btn-icon"></button></div>
-        <div>
-            <input type="range" id="size" name="size"
-                   min="1" max="64">
-            <label for="size">Pad Size</label>
-          </div>
+        <div class="under-pad">
+            <div class="size-display"><span class="size-span">16x16</span></div>
+            <div class="grid-container"><button class="btn grid" data-tooltip="Show grid"><img src="./imgs/grid.svg" alt="Show grid button" class="btn-icon"></button></div>
+        </div>
+        <div class="input-range">
+            <input type="range" id="size" name="size" value="16"
+            min="1" max="64">
+            <div class="label"><label for="size">Pad Size</label></div>
+        </div>
     </div>
+    <div class="footer container"><h1 class="footer txt">copyrights © akiva 2022</h1></div>
     <script src="./app.js"></script>
 </body>
 </html>  

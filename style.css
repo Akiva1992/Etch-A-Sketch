@@ -1,3 +1,10 @@
+:root {
+  --sketch-pad-width: 14em;
+  --sketch-pad-height: 14em;
+
+}
+
+
 /* Box sizing rules */
 *,
 *::before,
@@ -88,7 +95,9 @@ button {
 
 body{
     background-image: linear-gradient(to right top, #69c7f6, #79bff4, #8ab7ef, #98afe8, #a5a7df, #9fa2d9, #999dd2, #9398cc, #7a95c6, #6391bc, #4d8db0, #3b88a2);
-}
+    height: 100vh;
+    padding: 10px;
+  }
 
 /* h1{
     font-family: 'Dancing Script', cursive;
@@ -133,9 +142,16 @@ input[type="color"]::-webkit-color-swatch {
     background-color: #EC8C76;
     border-radius: 100px;
     padding: 0%;
-    margin-top:1em;
-    width: 60%;
-    margin: 2em auto;
+    /* margin-top:1em; */
+    width: 90%;
+    height: 10%;
+    min-width: 270px;
+    max-width: 500px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1.header.txt{
@@ -157,8 +173,8 @@ h1.header.txt{
   justify-content: center;
 
   position: absolute;
-  left: 5vw;
-  bottom: 20vh;
+  left: 5%;
+  bottom: 20%;
 }
 
 
@@ -166,7 +182,7 @@ h1.header.txt{
 
 .btns-container{
   width: max-content;
-  width: 16em;
+  width: var(--sketch-pad-width);
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -205,7 +221,7 @@ img{
   opacity: 0.2;
   transform: scale(1.2);
   /* border: #563838 1px solid; */
-}
+} 
 
 .btn::before {
   position: absolute;
@@ -225,7 +241,7 @@ img.btn-icon{
   padding: 0.3em 0;
 }
 .grid-container{
-  width: 16em;
+  width: var(--sketch-pad-width);
   display: flex;
   justify-content: flex-end;
 
@@ -239,9 +255,9 @@ img.btn-icon{
 
 .sketch-pad{
     background-color: #DFEDF4;
-    width: 16em;
-    height: 16em;
-    border-radius: 4px;
+    width: var(--sketch-pad-width);
+    height: var(--sketch-pad-height);
+    border-radius:4px;
     display:flex;
     flex-wrap: wrap;
     margin: auto;
@@ -259,7 +275,7 @@ img.btn-icon{
 
 .under-pad{
   display: flex;
-  width: 16em;
+  width: var(--sketch-pad-width);
   align-items: center;
 }
 
@@ -404,14 +420,16 @@ input[type=range]:focus::-ms-fill-upper {
   background-color: #EC8C76;
   border-radius: 100px;
   padding: 0%;
-  margin-top:1em;
   width: 60%;
-  /* max-width: 250px; */
+  /* width: 90%; */
+  min-width: 120px;
+  max-width: 300px;
   margin: 0 auto;
 
   position: fixed;
-  bottom: 1vh;
-  right: 20vw
+  bottom: 2%;
+  left: 15%;
+  right: 15%;
 }
 
 h1.footer.txt{
@@ -420,4 +438,165 @@ h1.footer.txt{
   font-family: 'Dancing Script', cursive;
   color: #563838;
   text-align: center;
+}
+
+
+@media (min-width:415px) {
+  :root {
+    --sketch-pad-width: 16em;
+    --sketch-pad-height: 16em;
+  
+  }  
+}
+
+
+@media (min-width:530px) {
+  :root {
+    --sketch-pad-width: 18em;
+    --sketch-pad-height: 18em;
+  
+  }  
+  .container.main{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+  }
+}
+
+@media (min-width:745px) {
+  :root {
+    --sketch-pad-width: 23em;
+    --sketch-pad-height: 23em;
+  
+  }  
+
+  .container.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    width: 40%;
+    margin: 0 auto;
+    /* align-items: center;
+    justify-content: center; */
+  
+    position: absolute;
+    left: 30%;
+    bottom: 15%;
+  }
+
+  .btns-container{
+    width: max-content;
+    /* width: var(--sketch-pad-width); */
+    display: inline;
+    /* flex-direction: column; */
+    /* gap: 1em; */
+    padding: 0;
+    /* margin:0; */
+    transform: rotate(90deg) translateX(80%) translateY(360%);
+    
+    position: absolute;
+
+    left: 0;
+    /* right: 0%; */
+    top: 0%;
+  }
+
+  .btn{
+    transform: rotate(-90deg);
+  }
+
+  .sketch-pad{
+    background-color: #DFEDF4;
+    width: var(--sketch-pad-width);
+    height: var(--sketch-pad-height);
+    border-radius:4px;
+    display:flex;
+    flex-wrap: wrap;
+    margin:0;
+    box-sizing: border-box;
+
+    position: absolute;
+}
+
+  .under-pad{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: max-content;
+    height: var(--sketch-pad-height);
+    align-items: center;
+  }
+
+  
+  .btn.grid.active{
+    opacity: 0.3;
+  }
+  
+  .btn.grid,
+  img.btn-icon{
+    width: max-content;
+    align-self: flex-end;
+    padding: 0.3em 0;
+    transform: rotate(0deg);
+  }
+
+  .size-display{
+    position: absolute;
+    right: 0;
+    top: 0%;
+
+    transform: translateX(-180%) translateY(-100%);
+
+  }
+
+  .grid-container{
+    width: max-content;
+    display: inline;
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+  }
+
+  .btn.grid::before {
+    transform: translateX(50%) translateY(100%);
+  }
+
+  .input-range{
+    position: absolute;
+
+    top: 0%;
+    transform: translateY(-120%);
+  }
+
+  .btn::before {
+    position: absolute;
+    font-family: 'Caveat', cursive;
+    font-size: 1em;
+    color: #fff;
+    left: 0;
+    top:0;
+    width: max-content;
+    transform: translateX(-120%);
+  }
+
+  .btn:hover::before{
+    content: attr(data-tooltip);
+    opacity: 0.9;  
+  }
+  
+  
+  .btn:active {
+    opacity: 0.2;
+    transform: rotate(-90deg) scale(1.2);
+  }
 }

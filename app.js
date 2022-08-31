@@ -18,9 +18,14 @@ body.addEventListener("mousedown",() =>{
     isDown = true;
 });
 
+// Prevents drag in sketchpad/
+sketchPad.addEventListener("dragstart",(e)=>{
+    e.preventDefault()
+});
+
 ///////////////////////Default pad size//////////////////////////////////////////////////
 
-let pixelNum = 16;
+let pixelNum = 8;
 
 for (let i =0; i<pixelNum; i++){
     for (let j=0; j<pixelNum; j++){
@@ -148,13 +153,15 @@ eraseBtn.addEventListener("click", ()=>{
 
 const clearBtn = document.querySelector(".btn.clear");
 clearBtn.addEventListener("click", () =>{
-    arr= Array.from(document.querySelectorAll('.pixel'));
-    arr.forEach(div => {
-        div.style.backgroundColor="";   
-    });
-    allBtns.forEach(btn =>{
-        btn.classList.remove("on");
-    });
+    window.location.reload();
+    // arr= Array.from(document.querySelectorAll('.pixel'));
+    // arr.forEach(div => {
+    //     div.style.backgroundColor="";   
+    // });
+    // allBtns.forEach(btn =>{
+    //     btn.classList.remove("on");
+    // });
+    // // clearBtn.classList.add("on"); 
 });
 
 
@@ -177,6 +184,11 @@ showGridBtn.addEventListener("click", () =>{
         });
     }
 });
+
+// showGridBtn.addEventListener("touchend", () =>{
+//     showGridBtn.classList.remove("active")
+// });
+
 
 //////////////////////////// Random button listener//////////////////////////////////
 
@@ -236,3 +248,27 @@ shadeBtn.addEventListener("click", ()=>{
 function subtract(number){
     return number - 25.5
 }
+
+
+// ////////////////////////////////////Touch Events////////////////////
+
+// sketchPad.addEventListener("touchstart", e =>{
+//     e.preventDefault();
+//     let color = colorPicker.value;
+//     arr= Array.from(document.querySelectorAll('.pixel'));
+//     arr.forEach(div => {
+//         div.addEventListener("touchmove",() =>{
+//             div.style.backgroundColor=color;
+//         });
+//         div.addEventListener("touchstart",() =>{
+//             div.style.backgroundColor=color;    
+//         });
+//     });
+//     allBtns.forEach(btn =>{
+//         btn.classList.remove("on");
+//     });
+//     drawBtn.classList.add("on");
+    
+// });
+ 
+

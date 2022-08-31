@@ -440,8 +440,7 @@ h1.footer.txt{
   text-align: center;
 }
 
-
-@media (min-width:415px) {
+@media (min-width:357px) {
   :root {
     --sketch-pad-width: 16em;
     --sketch-pad-height: 16em;
@@ -449,11 +448,31 @@ h1.footer.txt{
   }  
 }
 
-
-@media (min-width:530px) {
+@media (min-width:400px) {
   :root {
     --sketch-pad-width: 18em;
     --sketch-pad-height: 18em;
+  
+  } 
+  .container.main{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+  } 
+}
+
+
+@media (min-width:500px) {
+  :root {
+    --sketch-pad-width: 20em;
+    --sketch-pad-height: 20em;
   
   }  
   .container.main{
@@ -470,7 +489,40 @@ h1.footer.txt{
   }
 }
 
-@media (min-width:745px) {
+@media (min-width:600px) {
+  :root {
+    --sketch-pad-width: 21em;
+    --sketch-pad-height: 21em;
+  
+  }  
+
+  .btns-container{
+    padding: 0.2em;
+  }
+ 
+  .container.main{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+  }
+}
+
+@media (min-width:1345px) {
+  :root {
+    --sketch-pad-width: 20em;
+    --sketch-pad-height: 20em;
+  
+  } 
+}
+
+@media (min-width:1345px) {
   :root {
     --sketch-pad-width: 23em;
     --sketch-pad-height: 23em;

@@ -440,10 +440,26 @@ h1.footer.txt{
   text-align: center;
 }
 
+@media (min-width:340px) {
+  :root {
+    --sketch-pad-width: 15.5em;
+    --sketch-pad-height: 15.5em;
+  
+  }  
+}
+
 @media (min-width:357px) {
   :root {
     --sketch-pad-width: 16em;
     --sketch-pad-height: 16em;
+  
+  }  
+}
+
+@media (min-width:370px) {
+  :root {
+    --sketch-pad-width: 17em;
+    --sketch-pad-height: 17em;
   
   }  
 }
@@ -468,6 +484,46 @@ h1.footer.txt{
   } 
 }
 
+
+@media (min-width:430px) {
+  :root {
+    --sketch-pad-width: 19em;
+    --sketch-pad-height: 19em;
+  
+  } 
+  .container.main{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+  } 
+}
+
+@media (min-width:460px) {
+  :root {
+    --sketch-pad-width: 20em;
+    --sketch-pad-height: 20em;
+  
+  } 
+  .container.main{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+  } 
+}
 
 @media (min-width:500px) {
   :root {
@@ -524,8 +580,8 @@ h1.footer.txt{
 
 @media (min-width:1345px) {
   :root {
-    --sketch-pad-width: 23em;
-    --sketch-pad-height: 23em;
+    --sketch-pad-width: 28em;
+    --sketch-pad-height: 28em;
   
   }  
 
@@ -533,122 +589,21 @@ h1.footer.txt{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* flex-direction: column; */
+    flex-direction: column;
     width: 40%;
     margin: 0 auto;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center; 
+    justify-content: center;
   
     position: absolute;
     left: 30%;
-    bottom: 15%;
-  }
-
-  .btns-container{
-    width: max-content;
-    /* width: var(--sketch-pad-width); */
-    display: inline;
-    /* flex-direction: column; */
-    /* gap: 1em; */
-    padding: 0;
-    /* margin:0; */
-    transform: rotate(90deg) translateX(80%) translateY(360%);
-    
-    position: absolute;
-
-    left: 0;
-    /* right: 0%; */
-    top: 0%;
-  }
-
-  .btn{
-    transform: rotate(-90deg);
-  }
-
-  .sketch-pad{
-    background-color: #DFEDF4;
-    width: var(--sketch-pad-width);
-    height: var(--sketch-pad-height);
-    border-radius:4px;
-    display:flex;
-    flex-wrap: wrap;
-    margin:0;
-    box-sizing: border-box;
-
-    position: absolute;
-}
-
-  .under-pad{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: max-content;
-    height: var(--sketch-pad-height);
-    align-items: center;
-  }
-
-  
-  .btn.grid.active{
-    opacity: 0.3;
-  }
-  
-  .btn.grid,
-  img.btn-icon{
-    width: max-content;
-    align-self: flex-end;
-    padding: 0.3em 0;
-    transform: rotate(0deg);
-  }
-
-  .size-display{
-    position: absolute;
-    right: 0;
-    top: 0%;
-
-    transform: translateX(-180%) translateY(-100%);
-
-  }
-
-  .grid-container{
-    width: max-content;
-    display: inline;
-    position: absolute;
-
-    right: 0;
-    bottom: 0;
-  }
-
-  .btn.grid::before {
-    transform: translateX(50%) translateY(100%);
+    bottom: 8%;
   }
 
   .input-range{
-    position: absolute;
-
-    top: 0%;
-    transform: translateY(-120%);
-  }
-
-  .btn::before {
-    position: absolute;
-    font-family: 'Caveat', cursive;
-    font-size: 1em;
-    color: #fff;
-    left: 0;
-    top:0;
-    width: max-content;
-    transform: translateX(-120%);
-  }
-
-  .btn:hover::before{
-    content: attr(data-tooltip);
-    opacity: 0.9;  
+    display: flex;
+    align-items: center;
   }
   
-  
-  .btn:active {
-    opacity: 0.2;
-    transform: rotate(-90deg) scale(1.2);
-  }
 }
+

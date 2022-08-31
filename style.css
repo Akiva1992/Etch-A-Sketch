@@ -409,7 +409,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .label{
-  width: 100px;
+  width: 120px;
   margin-left: 0.5em;
   box-sizing: border-box;
 }
@@ -580,8 +580,8 @@ h1.footer.txt{
 
 @media (min-width:1345px) {
   :root {
-    --sketch-pad-width: 28em;
-    --sketch-pad-height: 28em;
+    --sketch-pad-width: 27em;
+    --sketch-pad-height: 27em;
   
   }  
 
@@ -605,5 +605,20 @@ h1.footer.txt{
     align-items: center;
   }
   
+  .header.container{
+    background-color: #EC8C76;
+    border-radius: 100px;
+    padding: 0%;
+    /* margin-top:1em; */
+    width: 90%;
+    height: 6%;
+    min-width: 270px;
+    max-width: 650px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 
